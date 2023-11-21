@@ -4,7 +4,7 @@
 using System.Linq;
 using System.Collections.Generic;
 
-namespace System.Text.Json.SourceGeneration
+namespace System.Text.Json.SourceGeneration.Reaper
 {
     internal static class SourceGeneratorHelpers
     {

@@ -12,11 +12,11 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Text;
 using SourceGenerators;
 
-namespace System.Text.Json.SourceGeneration
+namespace System.Text.Json.SourceGeneration.Reaper
 {
     public sealed partial class JsonSourceGenerator
     {
-        private sealed partial class Emitter
+        public sealed partial class Emitter
         {
             // Literals in generated source
             private const string CreateValueInfoMethodName = "CreateValueInfo";

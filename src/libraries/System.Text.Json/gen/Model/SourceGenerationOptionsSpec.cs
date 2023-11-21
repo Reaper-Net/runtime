@@ -4,7 +4,7 @@
 using System.Text.Json.Serialization;
 using SourceGenerators;
 
-namespace System.Text.Json.SourceGeneration
+namespace System.Text.Json.SourceGeneration.Reaper
 {
     /// <summary>
     /// Models compile-time configuration of <see cref="JsonSourceGenerationOptionsAttribute"/>.

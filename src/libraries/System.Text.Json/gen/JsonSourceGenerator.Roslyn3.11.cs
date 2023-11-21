@@ -12,7 +12,7 @@ using SourceGenerators;
 
 #pragma warning disable RS1035 // IIncrementalGenerator isn't available for the target configuration
 
-namespace System.Text.Json.SourceGeneration
+namespace System.Text.Json.SourceGeneration.Reaper
 {
     /// <summary>
     /// Generates source code to optimize serialization and deserialization with JsonSerializer.

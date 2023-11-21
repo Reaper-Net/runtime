@@ -5,11 +5,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace System.Text.Json.SourceGeneration
+namespace System.Text.Json.SourceGeneration.Reaper
 {
     public sealed partial class JsonSourceGenerator
     {
-        private sealed partial class Emitter
+        public sealed partial class Emitter
         {
             /// <summary>
             /// Unlike sourcegen warnings, exception messages should not be localized so we keep them in source.

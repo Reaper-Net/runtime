@@ -3,7 +3,7 @@
 
 using SourceGenerators;
 
-namespace System.Text.Json.SourceGeneration
+namespace System.Text.Json.SourceGeneration.Reaper
 {
     /// <summary>
     /// Models a constructor parameter for a generated type.

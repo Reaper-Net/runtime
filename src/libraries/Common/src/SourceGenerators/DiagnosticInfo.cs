@@ -12,7 +12,7 @@ namespace SourceGenerators;
 /// Descriptor for diagnostic instances using structural equality comparison.
 /// Provides a work-around for https://github.com/dotnet/roslyn/issues/68291.
 /// </summary>
-internal readonly struct DiagnosticInfo : IEquatable<DiagnosticInfo>
+public readonly struct DiagnosticInfo : IEquatable<DiagnosticInfo>
 {
     public DiagnosticDescriptor Descriptor { get; private init; }
     public object?[] MessageArgs { get; private init; }

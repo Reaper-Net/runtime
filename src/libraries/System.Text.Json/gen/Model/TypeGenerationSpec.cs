@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 using Microsoft.CodeAnalysis;
 using SourceGenerators;
 
-namespace System.Text.Json.SourceGeneration
+namespace System.Text.Json.SourceGeneration.Reaper
 {
     /// <summary>
     /// Models a generated type.

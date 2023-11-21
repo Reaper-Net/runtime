@@ -11,7 +11,7 @@ using Microsoft.CodeAnalysis.DotnetRuntime.Extensions;
 #endif
 using SourceGenerators;
 
-namespace System.Text.Json.SourceGeneration
+namespace System.Text.Json.SourceGeneration.Reaper
 {
     /// <summary>
     /// Generates source code to optimize serialization and deserialization with JsonSerializer.
@@ -55,7 +55,7 @@ namespace System.Text.Json.SourceGeneration
             context.RegisterSourceOutput(contextGenerationSpecs, ReportDiagnosticsAndEmitSource);
         }
 
-        private void ReportDiagnosticsAndEmitSource(SourceProductionContext sourceProductionContext, (ContextGenerationSpec? ContextGenerationSpec, ImmutableEquatableArray<DiagnosticInfo> Diagnostics) input)
+        public void ReportDiagnosticsAndEmitSource(SourceProductionContext sourceProductionContext, (ContextGenerationSpec? ContextGenerationSpec, ImmutableEquatableArray<DiagnosticInfo> Diagnostics) input)
         {
             // Report any diagnostics ahead of emitting.
             foreach (DiagnosticInfo diagnostic in input.Diagnostics)
@@ -78,7 +78,7 @@ namespace System.Text.Json.SourceGeneration
         /// </summary>
         public Action<ImmutableArray<ContextGenerationSpec>>? OnSourceEmitting { get; init; }
 
-        private partial class Emitter
+        public partial class Emitter
         {
             private readonly SourceProductionContext _context;
 

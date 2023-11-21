@@ -9,9 +9,9 @@ using System.Reflection;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.DotnetRuntime.Extensions;
 
-namespace System.Text.Json.SourceGeneration
+namespace System.Text.Json.SourceGeneration.Reaper
 {
-    internal sealed class KnownTypeSymbols
+    public sealed class KnownTypeSymbols
     {
         public KnownTypeSymbols(Compilation compilation)
             => Compilation = compilation;

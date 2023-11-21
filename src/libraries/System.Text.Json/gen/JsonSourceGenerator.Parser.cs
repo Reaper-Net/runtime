@@ -13,14 +13,14 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using SourceGenerators;
 
-namespace System.Text.Json.SourceGeneration
+namespace System.Text.Json.SourceGeneration.Reaper
 {
     public sealed partial class JsonSourceGenerator
     {
         // The source generator requires NRT and init-only property support.
         private const LanguageVersion MinimumSupportedLanguageVersion = LanguageVersion.CSharp9;
 
-        private sealed class Parser
+        public sealed class Parser
         {
             private const string SystemTextJsonNamespace = "System.Text.Json";
             private const string JsonExtensionDataAttributeFullName = "System.Text.Json.Serialization.JsonExtensionDataAttribute";
